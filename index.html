@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tank</title>
+     <link rel="icon" type="image/x-icon" href="./assets/img/tank.png">
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/font/themify-icons/themify-icons.css">
 </head>
@@ -12,19 +13,19 @@
         <div id="header">
             <!-- begin nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="">
                         More
                         <i class="ti-angle-down nav-arrow-down"></i>
                     </a>
                     <ul class="sub-nav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -33,15 +34,27 @@
                 <i class="ti-search search-icon"></i>
             </div>
         </div>
-        <div id="slider">
+        <div class="slider" id="slider1">
             <div class="text-content">
                 <h2 class="text-heading">T-90M</h2>
                 <div class="text-description">The Best Protected Tank</div>
             </div>
         </div>
+          <div class="slider" id="slider2">
+            <div class="text-content">
+                <h2 class="text-heading">T-14</h2>
+                <div class="text-description">The Best Protected Tank</div>
+            </div>
+        </div>
+          <div class="slider" id="slider3">
+            <div class="text-content">
+                <h2 class="text-heading">T-80BVM</h2>
+                <div class="text-description">The Best Protected Tank</div>
+            </div>
+        </div>
         <div id="content">
             <!-- about section -->
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">The Tank</h2>
                 <p class="section-sub-heading">We Made Tank</p>
                 <p class="about-text">A tank is an armoured fighting vehicle intended as a primary offensive weapon in front-line ground combat.
@@ -49,15 +62,15 @@
                      They are a mainstay of modern 20th and 21st century ground forces and a key part of combined arms combat.
                 </p>
                 <div class="member-list">
-                    <div class="member-item">
+                    <div class="member-item col col-thir text-center">
                         <p class="member-name">HE</p>
                         <img src="./assets/img/125mm_Soviet_OF-19_OTA-CR40_i2-copy.jpg" alt="HE" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class="member-item col col-thir text-center">
                         <p class="member-name">ATGM</p>
                         <img src="./assets/img/ATGM.jpg" alt="ATGM" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class="member-item col col-thir text-center">
                         <p class="member-name">APFSDS</p>
                         <img src="./assets/img/APFSDS.jpg" alt="HE" class="member-img">
                     </div>
@@ -65,8 +78,8 @@
                 </div>
             </div>
             <!-- Tour-section -->
-           <div class="tour-section">
-                 <div class="content-section">
+           <div id="tour" class="tour-section">
+            <div class="content-section">
                 <h2 class="section-heading text-white"> International Military-Technical Forum</h2>
                 <p class="section-sub-heading text-white">Remember to book your tickets!</p>
                 <ul class="ticket-list">
@@ -74,51 +87,117 @@
                     <li>October <span class="sold-out">Sold out</span></li>
                     <li>November <span class="quantity">3</span></li>
                 </ul>
-            </div>
-            <!-- Places -->
-            <div class="place-list">
-                <div class="place-item">
-                    <img src="./assets/img/Patriot Park.jpg" alt="Russia" class="place-img">
-                    <div class="place-body">
-                        <h3 class="place-heading">Russia</h3>
-                        <p class="place-time">Fri 27 Nov 2016</p>
-                        <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <a href="#" class="place-buy-btn">Buy Tickets</a>
-                        a.
+                  <!-- Places -->
+                <div class="row place-list">
+                    <div class="col col-thir">
+                        <img src="./assets/img/Patriot Park.jpg" alt="Russia" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">Russia</h3>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="btn js-buy-ticket">Buy Tickets</button>
+                        </div>
                     </div>
-                </div>
-                <div class="place-item">
-                    <img src="./assets/img/VietNam.jpg" alt="Russia" class="place-img">
-                    <div class="place-body">
-                        <h3 class="place-heading">Russia</h3>
-                        <p class="place-time">Fri 27 Nov 2016</p>
-                        <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <a href="#" class="place-buy-btn">Buy Tickets</a>
-                        a.
+                    <div class="col col-thir">
+                        <img src="./assets/img/VietNam.jpg" alt="Russia" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">VietNam</h3>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                         <button class="btn js-buy-ticket">Buy Tickets</button>
                     </div>
-                </div>
-                <div class="place-item">
+                     </div>
+                    <div class="col col-thir">
                     <img src="./assets/img/singapore.jpg" alt="Russia" class="place-img">
                     <div class="place-body">
-                        <h3 class="place-heading">Russia</h3>
+                        <h3 class="place-heading">Singapore</h3>
                         <p class="place-time">Fri 27 Nov 2016</p>
                         <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <a href="#" class="place-buy-btn">Buy Tickets</a>
-                        a.
+                        <button class="btn js-buy-ticket">Buy Tickets</button>
+                    </div>
                     </div>
                 </div>
             </div>
-           </div>
+        </div>
             <!-- Contact-section -->
-            <div class="content-section">
+            <div id="contact" class="content-section">
                 <h2 class="section-heading"> CONTACT</h2>
                 <p class="section-sub-heading">Drop your information</p>
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Moscow, Russia</p>
+                        <p><i class="ti-mobile"></i>Phone: +7 800 707-01-07</p>
+                        <p><i class="ti-email"></i> Email: patriot@gmail.com</p>
+                    </div>
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" placeholder="Name" id="" class="form-control">
+                                </div>
+                                <div class="col col-half">
+                                    <input type="email" name="" placeholder="Email" id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" placeholder="Message" id="" class="form-control">
+                                </div>
+                            </div>
+                            <input class="mt-16 btn pull-right" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- end -->
+            <div class="map-section">
+                <img src="./assets/img/map.jpg" alt="">
             </div>
         </div>
         <div id="footer">
-
+            <div class="socials">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter-alt"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copy-right">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
-    
+    <!-- modal -->
+    <div class="modal">
+        <div class="modal-container modal-container-js">
+            <div class="modal-close">
+                <i class="ti-close"></i>
+            </div>
+            <header class="modal-header">
+                <i class="ti-bag"></i>
+                Tickets
+            </header>
+            <div class="modal-body">
+                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
+                <label for="" class="modal-cart">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
+
+                 <label for="ticket-email" class="modal-cart">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+                <input id="ticket-email" type="email" class="modal-input" placeholder="Enter email...">
+                <button id="buy-ticket">
+                    Pay <i class="ti-check"></i>
+                </button>
+            </div>
+            <footer class="modal-footer">
+                Need <a href="">help?</a>
+            </footer>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
