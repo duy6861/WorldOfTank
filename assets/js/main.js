@@ -23,6 +23,39 @@ modalcontainer.addEventListener('click', function (e) {
 let slideIndex = 0;
 showSlides();
 
+
+var header = document.getElementById('header');
+var mobile_menu = document.getElementById('mobile-btn');
+var headerHeight = header.clientHeight;
+
+mobile_menu.addEventListener('click', function () {
+    var isClose = header.clientHeight === headerHeight
+    if (isClose) {
+        header.style.height = 'auto'
+    }
+    else {
+        header.style.height = null
+    }
+})
+var menuList = document.querySelectorAll('#nav li a[href*="#"]')
+
+
+for (var i = 0; i < menuList.length; i++) {
+
+    var menuitem = menuList[i];
+
+    menuitem.addEventListener('click', function (event) {
+        var isParentMenu = this.nextElementSibling && this.classList.contains('sub-nav')
+        if (!isParentMenu) {
+            header.style.height = null
+        }
+        else {
+            event.preventDefault();
+        }
+
+    })
+}
+
 function showSlides() {
     let i;
     let slides = document.getElementsByClassName("slider");

@@ -77,6 +77,7 @@ html{
     right: 0;
     left: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 #nav{
@@ -134,21 +135,35 @@ list-style-type: none;
 #nav .nav-arrow-down{
     font-size: 12px;
 }
-
+#header .mobile-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu,
 #header .search-btn{
    padding: 0 21px;
     float: right;
+
 }
 #header .search-btn:hover{
     background-color: #f44336;
     cursor: pointer;
 }
+#header .mobile-menu:hover{
+    background-color: #ccc;
 
+}
+#header .menu-icon:hover{
+    color: #000;
+}
+.menu-icon,
 #header .search-icon{
     
     color: #fff;
     font-size: 20px;
-    line-height: 46px;
+    line-height: 46px !important;
 }
 
 .slider {
@@ -193,6 +208,8 @@ list-style-type: none;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 #content .section-heading{
     text-align: center;
