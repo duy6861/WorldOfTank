@@ -49,6 +49,9 @@ html{
 .mt-16{
     margin-top: 16px !important;
 }
+.mt-32{
+    margin-top: 32px !important;
+}
 .btn {
     text-decoration: none;
     color: #fff;
@@ -57,7 +60,7 @@ html{
     margin-top: 15px;
     display: inline-block;
     border: none;
-
+    text-align: center;
 
 }
 .pull-right{
@@ -77,7 +80,6 @@ html{
     right: 0;
     left: 0;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav{
@@ -173,13 +175,13 @@ list-style-type: none;
     position: relative;
 }
 #slider1{
-     background: url('/assets/img/sand-desert-t-90ms-tank-of-the-russian-federation-hd-wallpaper-6fcbc5c8427d4c64ff7323bc2c0ada37.jpg') top center / cover no-repeat;
+     background: url('../img/sand-desert-t-90ms-tank-of-the-russian-federation-hd-wallpaper-6fcbc5c8427d4c64ff7323bc2c0ada37.jpg') top center / cover no-repeat;
 }
 #slider2{
-    background: url('/assets/img/t14.jpg') top center / cover no-repeat;
+    background: url('../img/t14.jpg') top center / cover no-repeat;
 }
 #slider3{
-    background: url('/assets/img/t80\ bvm.jpg') top center / cover no-repeat;
+    background: url('../img/t80\ bvm.jpg') top center / cover no-repeat;
 }
 .slider .text-content{
     position: absolute;
@@ -198,6 +200,7 @@ list-style-type: none;
 .slider .text-description{
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content {
@@ -283,7 +286,7 @@ list-style-type: none;
 }
 
 .place-list {
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 48px;
 
 }

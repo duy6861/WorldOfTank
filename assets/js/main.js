@@ -39,18 +39,18 @@ mobile_menu.addEventListener('click', function () {
 })
 var menuList = document.querySelectorAll('#nav li a[href*="#"]')
 
-
 for (var i = 0; i < menuList.length; i++) {
 
     var menuitem = menuList[i];
-
     menuitem.addEventListener('click', function (event) {
-        var isParentMenu = this.nextElementSibling && this.classList.contains('sub-nav')
+        var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('sub-nav')
+        console.log(isParentMenu)
         if (!isParentMenu) {
             header.style.height = null
         }
         else {
             event.preventDefault();
+            console.log('hahahahah')
         }
 
     })
